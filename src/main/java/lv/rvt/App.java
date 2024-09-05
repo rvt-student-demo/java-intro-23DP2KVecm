@@ -1,11 +1,17 @@
-package lv.rvt;
+package lv.rvt; // Klases atrašanās vieta projektā
 
-public class App 
+import java.util.Scanner;
+
+public class App
+
 {
     public static void main( String[] args )
     {
-        System.out.println("Hello world!");
+        Scanner scanner = new Scanner(System.in);
 
+        // Mēs gribam uzzināt no lietotāja vārdu, uzvārdu un grupu
+
+        // Un beigās printēt visu kopā vienā rindiņā izmantojot String savienošanu
     }
 
 }

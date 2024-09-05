@@ -7,21 +7,23 @@ public class App
 {
     public static void main( String[] args )
     {
-        Scanner scanner = new Scanner(System.in);
+        int wholeNumber = 3;
+        double deci = 5.5;
+        String tractor = "None!";
 
-        // Mēs gribam uzzināt no lietotāja vārdu, uzvārdu un grupu
+        System.out.println("Chicken:");
+        System.out.println(wholeNumber);
+        System.out.println("Bacon (kg):");
+        System.out.println(deci);
+        System.out.println("Tractor");
+        System.out.println(tractor);
 
-        // Un beigās printēt visu kopā vienā rindiņā izmantojot String savienošanu
-        System.out.println("Uzrakstiet vārdu: ");
-        String vārds = scanner.nextLine();
-
-        System.out.println("Uzrakstiet uzvārdu: ");
-        String uzvārds = scanner.nextLine();
-
-        System.out.println("Uzrakstiet klases grupu: ");
-        String gr = scanner.nextLine();
-
-        System.out.println(vārds + " " + uzvārds + " " + gr);
+        System.out.println();
+        
+        System.out.println("And finally, a summary:");
+        System.out.println(wholeNumber);
+        System.out.println(deci);
+        System.out.println(tractor);
     }
 
 }

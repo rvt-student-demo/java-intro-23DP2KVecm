@@ -7,23 +7,22 @@ public class App
 {
     public static void main( String[] args )
     {
-        int wholeNumber = 3;
-        double deci = 5.5;
-        String tractor = "None!";
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Chicken:");
-        System.out.println(wholeNumber);
-        System.out.println("Bacon (kg):");
-        System.out.println(deci);
-        System.out.println("Tractor");
-        System.out.println(tractor);
+        System.out.println("Ievadiet savu vārdu");
+        String name = scanner.nextLine();
 
-        System.out.println();
+        System.out.println("Ievadiet savu uzvārdu");
+        String lastname = scanner.nextLine();
+
+        System.out.println("Ievadiet savu grupu");
+        String group = scanner.nextLine();
+
+        // Izvade vienā rindiņā izmantojot 3 mainīgos
+        // Izvades paraugs: Students: <name> <surname>, grupa: <group>
+        // String concatention
         
-        System.out.println("And finally, a summary:");
-        System.out.println(wholeNumber);
-        System.out.println(deci);
-        System.out.println(tractor);
-    }
+        System.out.println("Students: " + name + " " + lastname + ", grupa: " + group);
 
+    }
 }

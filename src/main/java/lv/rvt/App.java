@@ -1,6 +1,6 @@
 package lv.rvt; // Klases atrašanās vieta projektā
 
-import java.util.Scanner;
+import java.util.*;
 
 public class App
 
@@ -9,20 +9,16 @@ public class App
     {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Ievadiet savu vārdu");
-        String name = scanner.nextLine();
+        System.out.println("Give the first number:");
+        int first = Integer.valueOf(scanner.nextLine());
 
-        System.out.println("Ievadiet savu uzvārdu");
-        String lastname = scanner.nextLine();
+        System.out.println("Give second number:");
+        int second = Integer.valueOf(scanner.nextLine());
 
-        System.out.println("Ievadiet savu grupu");
-        String group = scanner.nextLine();
+        int sumof = first + second;
 
-        // Izvade vienā rindiņā izmantojot 3 mainīgos
-        // Izvades paraugs: Students: <name> <surname>, grupa: <group>
-        // String concatention
+        System.out.println(first + " + " + second + " = " + sumof);
+
         
-        System.out.println("Students: " + name + " " + lastname + ", grupa: " + group);
-
     }
 }

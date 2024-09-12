@@ -16,9 +16,14 @@ public class App
         int second = Integer.valueOf(scanner.nextLine());
 
         int sumof = first + second;
+        int divof = first - second;
+        int multof = first * second;
+        double quof = first / (double) second;
 
         System.out.println(first + " + " + second + " = " + sumof);
-
+        System.out.println(first + " - " + second + " = " + divof);
+        System.out.println(first + " * " + second + " = " + multof);
+        System.out.println(first + " / " + second + " = " + quof);
         
     }
 }

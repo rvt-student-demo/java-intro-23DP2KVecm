@@ -5,37 +5,38 @@ import java.util.*;
 public class App
 
 {
-    public static void main( String[] args )
-    {
-        Scanner scanner = new Scanner(System.in);
+        public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Value of the gift?");
+        int sum = scan.nextInt();
+        double taxAmount = 0;
 
-        System.out.println("Give points [0-100]: ");
-        int number = Integer.valueOf(scanner.nextLine());
+        if (sum < 5000) {
+            System.out.println("No tax!");
+        }
+        if (sum >= 5000 && sum < 25000) {
+            taxAmount = 100 + (sum - 5000) * 0.08;
+            System.out.println("Tax: " + taxAmount);
 
-        if (number < 0) {
-            System.out.println("Grade: impossible!");
-        } 
-        else if (number < 50) {
-            System.out.println("Grade: failed");
         }
-        //Jautājums
-        else if (number < 60) {
-            System.out.println("Grade: 1");
+        if (sum >= 25000 && sum < 55000) {
+            taxAmount = 1700 + (sum - 25000) * 0.1;
+            System.out.println("Tax: " + taxAmount);
+
         }
-        else if (number < 70) {
-            System.out.println("Grade: 2");
+        if (sum >= 55000 && sum < 200000) {
+            taxAmount = 4700 + (sum - 55000) * 0.12;
+            System.out.println("Tax: " + taxAmount);
+
         }
-        else if (number < 80) {
-            System.out.println("Grade: 3");
+        if (sum >= 200000 && sum < 1000000) {
+            taxAmount = 22100 + (sum - 200000) * 0.15;
+            System.out.println("Tax: " + taxAmount);
+
         }
-        else if (number < 90) {
-            System.out.println("Grade: 4");
-        }
-        else if (number <= 100) {
-            System.out.println("Grade: 5");
-        }
-        else if (number > 100) {
-            System.out.println("Grade: incredible!");
+        if (sum >= 1000000) {
+            taxAmount = 142100 + (sum - 1000000) * 0.17;
+            System.out.println("Tax: " + taxAmount);
         }
     }
 }

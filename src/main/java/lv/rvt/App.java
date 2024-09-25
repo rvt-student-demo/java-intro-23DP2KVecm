@@ -5,19 +5,19 @@ import java.util.*;
 public class App
 {
         public static void main(String[] args) {
-        int mult = 0;
         Scanner scan = new Scanner(System.in);
         System.out.println("Give a number:");
         int num = scan.nextInt();
+        int count = 0;
+        int sum = num;
+
         while (num != 0) {
-            if (num > 0) {
-                System.out.println(num * num);
-            }
-            if (num < 0) {
-                System.out.println("Unsuitable number");
-            }
             System.out.println("Give a number");
             num = scan.nextInt();
+            count++;
+            sum += num;
         }
+        System.out.println("Number of numbers: " + count);
+        System.out.println("Sum of the numbers: " + sum);
     }
 }

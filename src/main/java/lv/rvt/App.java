@@ -8,16 +8,8 @@ public class App
         Scanner scan = new Scanner(System.in);
         System.out.println("Give a number:");
         int num = scan.nextInt();
-        int count = 0;
-        int sum = num;
-
-        while (num != 0) {
-            System.out.println("Give a number");
-            num = scan.nextInt();
-            count++;
-            sum += num;
+        for (int i=num; i<=100; i++) {
+            System.out.println(i);
         }
-        System.out.println("Number of numbers: " + count);
-        System.out.println("Sum of the numbers: " + sum);
     }
 }

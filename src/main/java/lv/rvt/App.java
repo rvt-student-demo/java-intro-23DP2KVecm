@@ -7,9 +7,13 @@ public class App
         public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Give a number:");
-        int num = scan.nextInt();
-        for (int i=num; i<=100; i++) {
-            System.out.println(i);
+        int n = scan.nextInt();
+        int num = 1;
+        int factorial = 1;
+        while (num<=n) {
+            factorial *= num;
+            num++;
+            System.out.println(factorial);
         }
     }
 }

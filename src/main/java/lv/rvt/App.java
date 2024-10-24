@@ -8,11 +8,16 @@ import lv.rvt.Room;
 import lv.rvt.Product;
 public class App
 {
-        public static void main(String[] args) 
-        {
-                Product banana = new Product("banana", 1.1, 13);
-                banana.printProduct();
-                
-        }
+        public static void main(String[] args) {
+                DecreasingCounter counter = new DecreasingCounter(2);
+        
+                counter.printValue();
+        
+                counter.decrement();
+                counter.printValue();
+        
+                counter.decrement();
+                counter.printValue();
+            }
 
 }

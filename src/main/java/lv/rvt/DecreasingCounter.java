@@ -19,4 +19,7 @@ public class DecreasingCounter {
         this.value = value;
     }
     }
+    public void reset(){
+        this.value = 0;
+    }
 }

@@ -1,7 +1,5 @@
 package lv.rvt; // Klases atrašanās vieta projektā
 
-import java.util.*;
-import java.io.*;
 public class Account
 {
         private double balance;

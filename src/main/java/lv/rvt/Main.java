@@ -3,23 +3,12 @@ package lv.rvt;
 public class Main {
 
     public static void main(String[] args) {
-        PaymentTerminal unicafeExactum = new PaymentTerminal();
-        System.out.println(unicafeExactum);
-
-        PaymentCard annasCard = new PaymentCard(2);
-
-        System.out.println("amount of money on the card is " + annasCard.balance() + " euros");
-
-        boolean wasSuccessful = unicafeExactum.eatHeartily(annasCard);
-        System.out.println("there was enough money: " + wasSuccessful);
-
-        unicafeExactum.addMoneyToCard(annasCard, 100);
-
-        wasSuccessful = unicafeExactum.eatHeartily(annasCard);
-        System.out.println("there was enough money: " + wasSuccessful);
-
-        System.out.println("amount of money on the card is " + annasCard.balance() + " euros");
-
-        System.out.println(unicafeExactum);
+        // the usual:
+        ProductWarehouseWithHistory juice = new ProductWarehouseWithHistory("Juice", 1000.0, 1000.0);
+        juice.takeFromWarehouse(11.3);
+        juice.addToWarehouse(1.0);
+        //System.out.println(juice.history()); // [1000.0, 988.7, 989.7]
+        
+        juice.printAnalysis();
     }
 }

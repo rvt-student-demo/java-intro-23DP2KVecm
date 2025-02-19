@@ -8,6 +8,7 @@ public class Person {
     private int age;
     private double weight;
     private double height;
+    private String address;
 
     public Person(String name, int age, double weight, double height) {
         this.name = name;
@@ -16,6 +17,13 @@ public class Person {
         this.height = height;
     }
 
+    public Person(String name, String address) {
+        //TODO Auto-generated constructor stub
+    }
+
+    public String getAddress(){
+        return this.address;
+    }
     public String getName() {
         return name;
     }

@@ -1,5 +1,4 @@
 package lv.rvt;
-import java.util.*;
 public class DecreasingCounter {
     private int value;
 
@@ -14,9 +13,6 @@ public class DecreasingCounter {
     public void decrement() {
         if (this.value > 0){
         this.value = value-1;
-    }
-    else{
-        this.value = value;
     }
     }
     public void reset(){

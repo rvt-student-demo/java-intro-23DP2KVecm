@@ -11,11 +11,7 @@ public class Box {
         this.length = length;
     }
 
-    public Box(Box oldBox) {
-        this.width = oldBox.width;
-        this.height = oldBox.height;
-        this.length = oldBox.length;
-    }
+
 
     public double volume() {
         return width * height * length;
@@ -40,4 +36,14 @@ public class Box {
     public Box biggerBox( Box oldBox ){
         return new Box( 1.25*oldBox.width, 1.25*oldBox.height, 1.25*oldBox.length);
     }
+
+    public Box smallerBox( Box oldBox ){
+        return new Box( 0.75*oldBox.width, 0.75*oldBox.height, 0.75*oldBox.length);
+    }
+    @Override
+    public String toString() {
+        return "width: " + width + ", height: " + height + ", length: " + length + ", volume: " + volume() + ", area: " + area();
+    }
+
+    
 }

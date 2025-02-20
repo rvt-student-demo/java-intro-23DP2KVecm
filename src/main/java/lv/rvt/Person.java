@@ -1,7 +1,4 @@
 package lv.rvt;
-import java.util.*;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Person {
     private String name;
@@ -10,15 +7,12 @@ public class Person {
     private double height;
     private String address;
 
-    public Person(String name, int age, double weight, double height) {
+    public Person(String name, int age, int weight, int height, String address) {
         this.name = name;
         this.age = age;
         this.weight = weight;
         this.height = height;
-    }
-
-    public Person(String name, String address) {
-        //TODO Auto-generated constructor stub
+        this.address = address;
     }
 
     public String getAddress(){
@@ -45,5 +39,9 @@ public class Person {
     }
     public String toString() {
         return this.name + ", age " + this.age + " years, my body mass index is " + this.bodyMassIndex();
+    }
+
+    public String toCsvRow() {
+        return this.name + ", " + this.age + ", " + this.weight + ", " + this.height + ", " + this.address;
     }
 }

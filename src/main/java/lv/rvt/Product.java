@@ -1,5 +1,4 @@
 package lv.rvt;
-import java.util.*;
 public class Product {
     private double price;
     private int quantity;

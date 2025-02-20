@@ -1,5 +1,4 @@
 package lv.rvt;
-import java.util. *;
 public class Stars {
     public static void printStars(int number) {
         //Code goes here

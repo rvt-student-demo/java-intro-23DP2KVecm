@@ -4,9 +4,6 @@ public class Statistics {
     private int count;
     int sum = 0;
     double average = 0;
-    public Statistics() {
-        this.count = count;
-    }
 
     public void addNumber(int number) {
         if (number != -1){
@@ -23,7 +20,6 @@ public class Statistics {
     }
     public double average(){
         average = 1.0 * sum / count;
-        this.average = average;
-        return this.average;
+        return average;
     }
 }

@@ -5,11 +5,15 @@ class BoxTester
 
   public static void main ( String[] args )
   {
-     Box box = new  Box( 2.5, 5.0, 6.0 ) ;
+     Box originalBox = new  Box( 2.5, 5.0, 6.0 ) ;
 
-     System.out.println( "Area: "  + box.area() + " volume: " + box. volume() );    
+     System.out.println("originalbox: " + originalBox);    
 
-     System.out.println( " biggerbox: " + box.biggerBox);
+     Box biggerBox = originalBox.biggerBox(originalBox);
+     Box smallerBox = originalBox.smallerBox(originalBox);
+    
+     System.out.println( "biggerbox: " + biggerBox);
 
+     System.out.println( "smallerbox: " + smallerBox);
   }
 }
